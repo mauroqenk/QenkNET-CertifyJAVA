@@ -10,7 +10,8 @@ package oca.studyproject;
  * 1-> 25% Jan-6-17
  * 
  * Chapter 1 Attempted scored:
- * 1-> 55% Jan-6-17
+ * 1-> 55% Jan-06-17
+ * 2-> 78% Jan-11-17
  * 
  * @author cuencam
  */
