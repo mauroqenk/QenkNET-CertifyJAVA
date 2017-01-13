@@ -28,7 +28,10 @@ public class Card {
         return rank.equals(c.rank) && suit.equals(c.                suit);
     }
     
-    
+    @Override
+    public int hashCode() {
+        return rank.hashCode();
+    }
     
     
     

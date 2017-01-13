@@ -6,7 +6,10 @@
 package ocp.studyproject.chapterone;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import ocp.studyproject.chapterone.cat.BigCat;
+import ocp.studyproject.chapterone.enumtest.Season;
 
 /**
  *
@@ -15,10 +18,31 @@ import ocp.studyproject.chapterone.cat.BigCat;
 public class TestClass {
     
     public static void main (String... args) {
-                
+               
+        reviewEnum();
         reviewEquals();
         overrideToString();
         //bigCatImpl();
+    }
+    
+    public static void reviewEnum() {
+        
+        System.out.println("Start enum review");
+        System.out.println(" ");
+        
+        Season s = Season.SUMMER;
+        System.out.println("print s->" + s);
+        System.out.println("s == Season.SUMMER? ->" + (             s == Season.SUMMER));
+        
+        System.out.println("Get the enum values as array");
+        
+        for (Season s1: Season.values())
+        {
+            System.out.print(s1.name() + " " + s1.ordinal());
+        }
+        System.out.println("______________________________");
+        System.out.println("End enum review");
+        System.out.println(" ");
     }
     
     public static void reviewEquals(){
